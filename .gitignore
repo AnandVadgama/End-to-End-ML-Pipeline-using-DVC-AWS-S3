@@ -2,7 +2,6 @@ data
 model
 reports
 logs
-logs/data_ingestion.log
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
