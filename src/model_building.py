@@ -121,6 +121,7 @@ def save_model(model, file_path:str)-> None:
 
 def main():
     try:
+        
         params = load_params('params.yaml')['model_building']
         
         train_data = load_data('./data/processed/train_tfidf.csv')

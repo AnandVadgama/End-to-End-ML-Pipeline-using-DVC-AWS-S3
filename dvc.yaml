@@ -1,5 +1,5 @@
 stages:
-  data_ingestion: 
+  data_ingestion:
     cmd: python src/data_ingestion.py
     deps:
     - src/data_ingestion.py
@@ -42,5 +42,12 @@ stages:
     - reports/metrics.json
 
 
-    
 
+
+params:
+- dvclive/params.yaml
+metrics:
+- dvclive/metrics.json
+plots:
+- dvclive/plots/metrics:
+    x: step
